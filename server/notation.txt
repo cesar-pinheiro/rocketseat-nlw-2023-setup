@@ -1,0 +1,61 @@
+- Projeto desenvolvido sobre Node versão 18.13.0 e npm versão 8.19.13
+
+- Opcional:
+    - Copiar as configurações de VSCode do Diego:
+        Acessar 'github.com/diego3g', ir em 'VSCode Settings' e copiar as configurações do VSCode.
+
+- Executar comando para dar setup no projeto:
+    $ npm init -y
+
+- Cria projeto com typescript:
+    $ npm i typescript @types/node ts-node-dev -D
+
+- Instala o framework 'tsx' no projeto. Este compila e executa os códigos typescript.
+    $ npm i tsx -D
+
+- Faz setup e cria o arquivo de configuração do typescript:
+    $ npx tsc --init
+
+- No arquivo de configuração (tsconfig.json) alterar o valor (para) do parâmetro "target": "es2020".
+
+- Instalar o framework 'fastify' no projeto. Este gerencia as rotas semelhante ao 'express'.
+    $ npm i fastify
+
+- Instalar o framework 'fastify/cors' para permitir liberação de acesso para o frontend.
+    $ npm i @fastify/cors
+
+- Criar uma pasta 'src' e dentro deste criar o arquivo 'server.ts'.
+
+- Instalar o framework 'prisma' no projeto. Este fornece comandos para criar banco de dados e suas estruturas.
+    $ npm i prisma -D
+
+- Instalar o framework '@prisma/client' no projeto. Este faz a conexão com o banco de dados.
+    $ npm i @prisma/client
+
+- Adicionar no VSCode a extensão do Prisma.
+
+- Executa o setup do prisma para banco de dados SQLite:
+    $ npx prisma init --datasource-provider SQLite
+
+- Comando para executar o prisma studio:
+    $ npx prisma studio
+
+- Comando para rodar as migrations do prima:
+    $ npx prisma migrate dev
+
+- Instalar os frameworks para diagrama de banco de dados:
+    $ npm i prisma-erd-generator @mermaid-js/mermaid-cli -D
+    - Adiciona a configuração no arquivo 'schema.prisma'.
+    - Comando para executar o diagrama prisma:
+        $ npx prisma generate
+
+- Comando para executar um seed (arquivo de script para popular o banco de dados):
+    $ npx prisma db seed
+
+- Instalar a biblioteca Zod (faz validação de dados de rotas entre outros)
+    $ npm i zod
+
+- Instalar a biblioteca DayJS (trabalha com datas)
+    $ npm i DayJS
+
+
