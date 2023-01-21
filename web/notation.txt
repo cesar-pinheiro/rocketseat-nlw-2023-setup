@@ -1,0 +1,26 @@
+- Dar o setup do projeto web com a biblioteca Vite que converte o projeto para a versão de javascript mais moderna e estável compreensível por todos os navegadores, com o comando:
+	$ npm create vite@latest web -- --template react-ts
+
+- Executar o comando para instalar as dependências do projeto (pasta node_modules):
+	$ npm install
+	nota: execute o Reload Window (Ctrl+Shift+P) do VS Code caso não resolva as críticas de dependências.
+
+- Instalar a biblioteca de utilitários de CSS denominada 'TailwindCSS':
+	$ npm install -D tailwindcss postcss autoprefixer
+	$ npx tailwindcss init -p
+	nota: segue instruções para definir o arquivo de configuração 'tailwind.config.cjs' e arquivo global de CSS:
+		- https://tailwindcss.com/docs/installation/using-postcss
+	- Adiconar no VSCode as extensões 'Tailwind CSS IntelliSense' e 'PostCSS Language Support'
+
+- Instala biblioteca de icones:
+	$ npm install phosphor-react
+
+- Instalar a biblioteca DayJS (trabalha com datas)
+    $ npm i dayjs
+
+- Instalar biblioteca de componentes react Radix UI:
+	$ npm install @radix-ui/react-dialog @radix-ui/react-popover @radix-ui/react-checkbox
+
+- Instalar biblioteca de chamadas de API
+	$ npm install axios
+
